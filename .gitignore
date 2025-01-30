@@ -1,6 +1,8 @@
 __pycache__
 .DS_store
 bin
+csv
+images
 include
 PCAP
 share
@@ -8,4 +10,3 @@ pyvenv.cfg
 lib/*
 *.csv
 ACCOUNTS UPSIDE.xlsx
-appunti paper
