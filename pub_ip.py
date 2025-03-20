@@ -27,10 +27,10 @@ def extract_destination_ips(input_csv, source_ip_list, output_csv):
 input_csv = "csv/28_06_1000-1330.csv"  # Path to your CSV file
 output_csv = "destination_ips.csv"  # Path to the output CSV file
 
-extract_destination_ips(input_csv, g.BRAWLHALLA, "pub_ips_brawlhalla.csv")
-extract_destination_ips(input_csv, g.CLASH_ROYALE, "pub_ips_cry.csv")
-extract_destination_ips(input_csv, g.EAFC, "pub_ips_eafc.csv")
-extract_destination_ips(input_csv, g.ROCKET_LEAGUE, "pub_ips_rocket.csv")
-extract_destination_ips(input_csv, g.CHESS, "pub_ips_chess.csv")
+#extract_destination_ips(input_csv, g.BRAWLHALLA, "pub_ips_brawlhalla.csv")
+#extract_destination_ips(input_csv, g.CLASH_ROYALE, "pub_ips_cry.csv")
+#extract_destination_ips(input_csv, g.EAFC, "pub_ips_eafc.csv")
+#extract_destination_ips(input_csv, g.ROCKET_LEAGUE, "pub_ips_rocket.csv")
+#extract_destination_ips(input_csv, g.CHESS, "pub_ips_chess.csv")
 
 #Write a script that given a list of sublists of IPs, substitutes for each IP in the sublist an arbitrary IP for the destinationIP and the dual

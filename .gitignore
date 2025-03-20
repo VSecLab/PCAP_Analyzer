@@ -9,5 +9,6 @@ PCAP
 share
 pyvenv.cfg
 lib/*
+lib
 *.csv
 ACCOUNTS UPSIDE.xlsx
