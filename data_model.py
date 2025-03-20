@@ -111,8 +111,10 @@ def create_data_payload_csv(_pcap, _metadata_csv, _payload_csv):
             pckt_metadata_clean = {k: int(v) if isinstance(v, (int, float)) and v is not None else v for k, v in pckt_metadata.items()}
             pckt_payload_clean = {k: int(v) if isinstance(v, (int, float)) and v is not None else v for k, v in pckt_payload.items()}
 
-            metadata_chunk.append(pckt_metadata_clean)
-            payload_chunk.append(pckt_payload_clean)
+            if pckt_metadata_clean:
+                metadata_chunk.append(pckt_metadata_clean)
+                payload_chunk.append(pckt_payload_clean)
+            else: pckt_no -= 1
 
             if len(metadata_chunk) >= chunk_size:
                 # Write chunk to CSV
@@ -172,8 +174,10 @@ def create_data_payload_csv_timed(_pcap, _metadata_csv, _payload_csv, stop_times
             pckt_metadata_clean = {k: int(v) if isinstance(v, (int, float)) and v is not None else v for k, v in pckt_metadata.items()}
             pckt_payload_clean = {k: int(v) if isinstance(v, (int, float)) and v is not None else v for k, v in pckt_payload.items()}
 
-            metadata_chunk.append(pckt_metadata_clean)
-            payload_chunk.append(pckt_payload_clean)
+            if pckt_metadata_clean:
+                metadata_chunk.append(pckt_metadata_clean)
+                payload_chunk.append(pckt_payload_clean)
+            else: pckt_no -= 1
 
             if len(metadata_chunk) >= chunk_size:
                 # Write chunk to CSV
